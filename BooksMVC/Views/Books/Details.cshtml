@@ -1,0 +1,24 @@
+﻿@model Book
+
+@{
+	ViewData["Title"] = "Book Details";
+}
+
+<h1 class="text-center mb-5 mt-5">Book Details</h1>
+
+<h2 class="text-center mt-5 text-primary">Title</h2>
+<h4 class="text-center mb-5">@Model.Title</h4>
+
+<h2 class="text-center mt-5 text-primary">Description</h2>
+<h4 class="text-center mb-5">@Model.Description</h4>
+
+<h2 class="text-center mt-5 text-primary">PageCount</h2>
+<h4 class="text-center mb-5">@Model.PageCount</h4>
+
+<h2 class="text-center mt-5 text-primary">Excerpt</h2>
+<h4 class="text-center mb-5">@Model.Excerpt</h4>
+
+<h2 class="text-center mt-5 text-primary">PublishDate</h2>
+<h4 class="text-center mb-5">@Model.PublishDate</h4>
+
+<a asp-action="Index" class="btn btn-info d-flex w-50 m-auto justify-content-center text-white fs-3 mt-5 mb-5">Go Back</a>
